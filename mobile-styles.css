@@ -1,0 +1,472 @@
+body {
+    font-family: 'Noto Serif', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #8A4163;
+}
+
+
+/* mobile-styles.css */
+/* Загальні стилі залишаються без змін, додаємо блок з reveal-анімацією внизу */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* …далі весь ваш існуючий код mobile-styles.css без змін… */
+
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #8A4163;
+}
+
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+    padding: 45px 15px;
+  background-image: url("./img/HeroBGPHONE.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  height: 850px;
+}
+
+.heroMainTex {
+color: #493508;
+text-align: center;
+font-family: "Noto Serif";
+font-size: 28px;
+font-style: normal;
+padding-bottom: 10px;
+}
+
+.heroTex {
+    color: #493508;
+margin-left: auto;
+margin-right: auto;
+font-family: "Noto Serif";
+font-size: 20px;
+font-style: normal;
+width: 320px;
+font-weight: 400;
+padding-bottom: 30px;
+}
+
+.HeroIMG {
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+    margin-top: 30px;
+      transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.HeroIMG.fade-out {
+  opacity: 0;
+}
+
+.heroButton {
+    border-radius: 15px;
+    border: 2px solid #493508;
+    color: #493508;
+    font-family: "Noto Serif";
+    font-size: 20px;
+width: 363px;
+height: 56px;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+
+
+/* about */
+
+.about {
+    border-radius: 20px;
+background: #F6D6DE;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+max-width: 360px;
+justify-self: center;
+margin-bottom: 30px;
+padding: 20px;
+}
+
+
+.aboutMainTex {
+    color: #F6D6DE;
+font-family: "Noto Serif";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+padding-bottom: 50px;
+text-align: center;
+}
+
+.aboutList {
+    gap: 40px;
+}
+
+.aboutListItem {}
+
+.aboutListItemText {
+    color: #493508;
+font-family: "Noto Serif";
+font-size: 21px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+max-width: 500px;
+}
+
+.social {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.social li {
+    cursor: pointer;
+}
+
+
+/* Kurses */
+
+
+
+.kurses {}
+
+.KursesText {
+    color: #F6D6DE;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+
+.KursesList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  padding: 40px 20px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+/* Картка */
+.KursesListItem {
+  background-color: #fddde6;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 20px;
+  padding-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.KursesListItemText{
+    color: #493508;
+font-family: "Noto Serif";
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 15px;
+}
+
+.KursesListItemTextP {
+    color: #493508;
+font-family: "Noto Serif";
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 20px;
+}
+
+.KursesListItemTextPrice {
+    color: #493508;
+font-family: "Noto Serif";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 30px;
+}
+
+.KursesListItemFisButton {
+    border-radius: 5px;
+border: 2px solid #000;
+padding: 15px 70px;
+background-color: transparent;
+margin-bottom: 15px;
+color: #493508;
+font-family: "Noto Serif";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.KursesListItemSecButton {
+    border-radius: 5px;
+border: 1px solid #000;
+background: #493508;
+padding: 15px 80px;
+color: #F6E5FF;
+font-family: "Noto Serif";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
+/* revievs */
+
+
+.revievsTex {
+    color: #F6D6DE;
+font-family: "Noto Serif";
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+margin-bottom: 30px;
+}
+
+    .testimonial-slider {
+      max-width: 320px;
+      margin: auto;
+      padding: 40px;
+      background-color: #F6D6DE;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      position: relative;
+      margin-bottom: 100px;
+    }
+
+    .testimonial-content {
+color: #493508;
+text-align: center;
+font-family: "Noto Serif";
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+      transition: opacity 0.3s ease;
+    }
+
+
+    .slider-buttons {
+      margin-top: 30px;
+    }
+
+    .slider-buttons button {
+color: #493508;
+font-family: "Noto Serif";
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 5px 27px;
+border-radius: 5px;
+border: 2px solid #493508;
+background-color: transparent;
+    }
+
+
+    /* FAQ */
+
+
+
+.faq-section {
+  max-width: 350px;
+  margin: auto;
+  background-color: #F6D6DE;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.faq-section h2 {
+  color: #8A4163;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #8A4163;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #8A4163;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 10px;
+}
+
+.faq-toggle {
+  font-size: 20px;
+  color: #8A4163;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+}
+
+
+
+    /* footer */
+
+
+    .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+margin-left: auto;
+margin-right: auto;
+    padding: 10px;
+    background: #F6D6DE;
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+.footerList {
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.KursesListItem:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+
+/* --- При завантаженні --- */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-on-load {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+.delay-6 { animation-delay: 1.2s; }
+
+
+/* --- При прокрутці (reveal) --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
